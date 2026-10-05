@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Hash & Colisão - Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Desafio de Colisão de Hash</h1>
+        <p class="description">
+            O objetivo deste projeto é encontrar duas palavras diferentes (com pelo menos 2 letras) 
+            que gerem exatamente o mesmo valor de hash utilizando o algoritmo <code>calcula_hash</code>.
+        </p>
+
+        <!-- Seção 1: Testar Palavras Manualmente -->
+        <div class="card">
+            <h2>1. Testar Palavras Manualmente</h2>
+            <div class="input-group">
+                <input type="text" id="palavra1" placeholder="Ex: ab" />
+                <span id="hash1" class="hash-badge">Hash: -</span>
+            </div>
+            <div class="input-group">
+                <input type="text" id="palavra2" placeholder="Ex: ba" />
+                <span id="hash2" class="hash-badge">Hash: -</span>
+            </div>
+            <div id="status-comparacao" class="status"></div>
+        </div>
+
+        <!-- Seção 2: Gerador Automático de Colisão -->
+        <div class="card">
+            <h2>2. Buscar Colisão Automaticamente</h2>
+            <p>Clique no botão abaixo para executar um algoritmo de busca por colisão no navegador:</p>
+            <button id="btn-buscar">Encontrar Par com Colisão</button>
+            <div id="resultado-busca" class="result-box hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
