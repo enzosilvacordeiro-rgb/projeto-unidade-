@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #f1f5f9;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 2px solid #38bdf8;
+}
+
+.hash-badge {
+    background-color: #334155;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #38bdf8;
+    min-width: 140px;
+    text-align: center;
+}
+
+.status {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status.sucesso {
+    background-color: #14532d;
+    color: #4ade80;
+}
+
+.status.diferente {
+    background-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #0284c7;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
+
+.result-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #0f172a;
+    border-radius: 6px;
+    border-left: 4px solid #38bdf8;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
